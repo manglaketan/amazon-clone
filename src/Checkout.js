@@ -3,6 +3,7 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
+import CartEmpty from "./CartEmpty";
 
 function Checkout() {
 	const [{ user, basket }, dispatch] = useStateValue();
@@ -16,17 +17,21 @@ function Checkout() {
 				/>
 
 				<div>
-					<h3>Hey {user?.email}</h3>
-					<h2 className="checkout__title">Your Shopping Basket</h2>
-					{basket.map((item) => (
-						<CheckoutProduct
-							id={item.id}
-							title={item.title}
-							price={item.price}
-							rating={item.rating}
-							image={item.image}
-						/>
-					))}
+					<h3>{user ? `Hey ${user.email}` : ""}</h3>
+					<h2 className="checkout__title">Your Shopping Cart</h2>
+					{basket.length === 0 ? (
+						<CartEmpty />
+					) : (
+						basket.map((item) => (
+							<CheckoutProduct
+								id={item.id}
+								title={item.title}
+								price={item.price}
+								rating={item.rating}
+								image={item.image}
+							/>
+						))
+					)}
 				</div>
 			</div>
 
