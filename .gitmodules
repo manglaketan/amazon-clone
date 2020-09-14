@@ -1,0 +1,3 @@
+[submodule "amazon-clone-backend"]
+	path = amazon-clone-backend
+	url = https://github.com/manglaketan/amazon-clone-backend.git
