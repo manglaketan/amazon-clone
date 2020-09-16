@@ -38,6 +38,7 @@
 
 .footer__bottom {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 5px 100px;
 	justify-content: center;
 }

@@ -14,4 +14,14 @@
 .checkout__ad {
 	margin-bottom: 10px;
 	width: 80%;
+	object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+	.checkout {
+		display: flex;
+		height: max-content;
+		flex-direction: column;
+		align-items: center;
+	}
 }

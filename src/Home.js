@@ -16,14 +16,14 @@ function Home() {
 					<Product
 						id="12321341"
 						title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses (English, Paperback, Eric Ries)"
-						price={12.99}
+						price={299}
 						image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
 						rating={5}
 					/>
 					<Product
 						id="49654253"
 						title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-Beater, Dough Hook and Whisk, 5ltr Glass Bowl"
-						price={239.0}
+						price={3000}
 						rating={3}
 						image="https://images-na.ssl-images-amazon.com/images/I/51ae8jtSakL._SX425_.jpg"
 					/>
@@ -32,21 +32,21 @@ function Home() {
 					<Product
 						id="83838728"
 						title="Redmi 8A Dual (Midnight Grey, 2GB RAM, 32GB Storage) – Dual Cameras & 5,000 mAH Battery"
-						price={800.0}
+						price={13000}
 						rating={4}
 						image="https://images-na.ssl-images-amazon.com/images/I/71h%2BC9wJCjL._SL1500_.jpg"
 					/>
 					<Product
 						id="78348734"
 						title="Kadence Wanderer Brown Mahogany wood Soprano Ukulele with Bag"
-						price={345.4}
+						price={3450}
 						rating={5}
 						image="https://images-na.ssl-images-amazon.com/images/I/71ngZfQUzyL._SL1500_.jpg"
 					/>
 					<Product
 						id="473384734"
 						title="Classmate 2100117 Soft Cover 6 Subject Spiral Binding Notebook, Single Line, 300 Pages "
-						price={40.0}
+						price={40}
 						rating={4}
 						image="https://images-na.ssl-images-amazon.com/images/I/71ulyHAa-hL._SL1100_.jpg"
 					/>

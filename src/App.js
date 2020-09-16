@@ -12,6 +12,7 @@ import Orders from "./Orders";
 import Footer from "./Footer";
 import Home from "./Home";
 import Header from "./Header";
+import PrimePage from "./PrimePage";
 
 import "./App.css";
 
@@ -50,14 +51,23 @@ function App() {
 						<Orders />
 						<Footer />
 					</Route>
+
+					<Route path="/prime">
+						<Header />
+						<PrimePage />
+						<Footer />
+					</Route>
+
 					<Route path="/login">
 						<Login />
 					</Route>
+
 					<Route path="/checkout">
 						<Header />
 						<Checkout />
 						<Footer />
 					</Route>
+
 					<Route path="/payment">
 						<Header />
 						<Elements stripe={promise}>
@@ -65,6 +75,7 @@ function App() {
 						</Elements>
 						<Footer />
 					</Route>
+
 					<Route path="/">
 						<Header />
 						<Home />
